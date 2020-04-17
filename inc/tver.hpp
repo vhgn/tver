@@ -102,7 +102,7 @@ namespace tver {
 	/// Parser object type
 	struct Parser {
 		unsigned index = 0;
-		std::string text;
+		std::string text = "";
 
 		/// Initialize parser
 		Parser() {}

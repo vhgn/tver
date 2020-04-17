@@ -3,11 +3,9 @@
 #include "tver.hpp"
 
 int main() {
-	tver::Parser parser;
-
 	try {
 		while (true) {
-			parser.text = "";
+			tver::Parser parser;
 			std::cout << "> ";
 			std::getline(std::cin, parser.text);
 			std::cout << parser.parse() << std::endl;
