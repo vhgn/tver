@@ -171,7 +171,7 @@ namespace tver {
 						if (type == Type::Operation)
 							return Token(text[index - 1]);
 						else
-							throw errors::ExtraOperand();
+							throw errors::ExtraOperator();
 					default:
 						throw errors::UnrecognizedSymbol();
 				}
@@ -180,7 +180,7 @@ namespace tver {
 			if (type == Type::Number)
 				return Token(num);
 			else
-				throw errors::FileEndedUnexpectedly();
+				throw errors::ExpressionEndedUnexpectedly();
 		}
 		
 		Token peek() {
