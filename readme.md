@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="256" src="res/tver.png">
+</p>
+
 > Friendly simple calculator
 
 Tver can be used both as a single header library and as a binary executable.
