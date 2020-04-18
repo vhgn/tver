@@ -5,10 +5,10 @@
 int main() {
 	try {
 		while (true) {
-			tver::Parser parser;
 			std::cout << "> ";
-			std::getline(std::cin, parser.text);
-			std::cout << parser.parse() << std::endl;
+			std::string text;
+			std::getline(std::cin, text);
+			std::cout << tver::Parser(text).parse() << std::endl;
 		}
 	} catch (const std::exception& error) {
 		std::cerr << error.what() << std::endl;
