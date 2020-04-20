@@ -1,4 +1,4 @@
-#include "catch2/single_include/catch2/catch.hpp"
+#include <catch.hpp>
 #include "tver.hpp"
 
 TEST_CASE("Simple expressions") {
