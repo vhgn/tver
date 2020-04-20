@@ -6,6 +6,15 @@
 
 Tver can be used both as a single header library and as a binary executable.
 
+# Installation
+
+> Make sure you **install** Catch2 from `lib` folder
+
+```sh
+make test
+make install
+```
+
 # Usage
 
 You can write expressions with
