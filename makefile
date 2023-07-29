@@ -13,7 +13,10 @@ all: obj bin run
 
 obj: obj/src obj/tst
 
-obj/%:
+obj/src:
+	mkdir -p $@
+
+obj/tst:
 	mkdir -p $@
 
 bin:
@@ -45,3 +48,5 @@ obj/src/%.o: src/%.cpp $(includes)
 
 install: $(includes)
 	install $(includes) $(location)/$(name)/
+
+.PHONY: all obj bin run test clean install obj/src obj/tst
